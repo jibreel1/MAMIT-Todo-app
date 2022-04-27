@@ -8,88 +8,28 @@
       <title>MAMIT TODO APP</title>
    </head>
    <body>
-      <section class="container">
-         <div>
-            <h2 class="head">MAMIT TODO APP</h2>
+      <section class="container"> 
+         <div class="head">
+            <h2 class="">MAMIT TODO APP</h2>
          </div>
 
          <div class="middle">
             <input
-            onfocus="this.value = ''"
                type="text"
                class="butt"
                id="todo"
                placeholder="Enter an Activity..."
             />
-            <button class="butn" id="addTodo">Add Todo</button>
+            <button class="add-todo-btn" id="addTodo">Add Todo</button>
+         </div>
+         <div class="error">
+            <img src="/icon-error.svg" alt="">
+            <p>Can't be empty</p>
          </div>
 
          <div class="foot">
             <ul id="list">
-               <li class="inp1">
-                  <input type="checkbox" name="todo" value="Todo1" />
-                  <p>Wake up</p>
-                  <button class="bttn">
-                     <img
-                        src="outline_delete_forever_black_24dp.png"
-                        alt=""
-                        class="bin"
-                        id="bin"
-                     />
-                  </button>
-               </li>
-
-               <li class="inp1" id="list1">
-                  <input type="checkbox" name="todo" value="Todo2" />
-                  <p>Brush teeth</p>
-                  <button class="bttn">
-                     <img
-                        src="outline_delete_forever_black_24dp.png"
-                        alt=""
-                        class="bin"
-                        id="bin"
-                     />
-                  </button>
-               </li>
-
-               <li class="inp1">
-                  <input type="checkbox" name="todo" value="Todo3" />
-                  <p>Eat Breakfast</p>
-                  <button class="bttn">
-                     <img
-                        src="outline_delete_forever_black_24dp.png"
-                        alt=""
-                        class="bin"
-                        id="bin"
-                     />
-                  </button>
-               </li>
-
-               <li class="inp1">
-                  <input type="checkbox" name="todo" value="Todo4" />
-                  <p>Sleep again</p>
-                  <button class="bttn">
-                     <img
-                        src="outline_delete_forever_black_24dp.png"
-                        alt=""
-                        class="bin"
-                        id="bin"
-                     />
-                  </button>
-               </li>
-
-               <li class="inp1">
-                  <input type="checkbox" name="todo" value="Todo5'" />
-                  <p>Watch film</p>
-                  <button class="bttn">
-                     <img
-                        src="outline_delete_forever_black_24dp.png"
-                        alt=""
-                        class="bin"
-                        id="bin"
-                     />
-                  </button>
-               </li>
+              
             </ul>
          </div>
       </section>
