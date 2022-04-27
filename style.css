@@ -79,6 +79,7 @@ body {
 }
 
 input[type='checkbox'] {
+   -webkit-appearance: none;
    appearance: none;
    width: 20px;
    height: 20px;
@@ -96,7 +97,7 @@ input[type='checkbox']::before {
    transform: scale(0);
    transition: 120ms transform ease-in-out;
    border-radius: 50%;
-   box-shadow: inset 1em 1em #344E41;
+   box-shadow: inset 5em 5em #344E41;
 }
 
 input[type='checkbox']:checked::before{
