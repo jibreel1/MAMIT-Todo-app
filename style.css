@@ -126,6 +126,11 @@ input[type='checkbox']:checked::before{
 }
 
 @media screen and (min-width: 796px) {
+
+   body{
+      margin-top: 50px;
+      justify-content: flex-start;
+   }
    
    .container {
       display: flex;
