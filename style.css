@@ -9,17 +9,17 @@ body {
    height: 100vh;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-start;
    align-content: center;
    background-color: rgb(136, 199, 136);
-   margin: 0 20px;
+   margin: 30px 20px;
    font-family: Arial, Helvetica, sans-serif;
 }
 
 .head {
    color: white;
    text-align: center;
-   background-color: #344E41;
+   background-color: #344e41;
    padding: 20px;
 }
 
@@ -30,17 +30,16 @@ body {
    margin: 30px 0 5px 0;
 }
 
-.error{
+.error {
    display: flex;
    align-items: center;
    gap: 15px;
    font-size: 15px;
-   color: #F96464;
+   color: #f96464;
    font-weight: bold;
    margin-bottom: 30px;
    display: none;
    justify-content: left;
-
 }
 .butt {
    width: 80%;
@@ -70,7 +69,7 @@ body {
    justify-content: space-between;
    align-items: center;
    padding: 10px;
-   border-bottom: 1px solid #344E41;
+   border-bottom: 1px solid #344e41;
    font-size: 20px;
 }
 
@@ -78,29 +77,29 @@ body {
    cursor: pointer;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
    -webkit-appearance: none;
    appearance: none;
    width: 20px;
    height: 20px;
-   border: 0.15em solid #344E41;
+   border: 0.15em solid #344e41;
    border-radius: 50%;
    display: grid;
    place-content: center;
    cursor: pointer;
 }
 
-input[type='checkbox']::before {
-   content: '';
+input[type="checkbox"]::before {
+   content: "";
    width: 14px;
    height: 14px;
    transform: scale(0);
    transition: 120ms transform ease-in-out;
    border-radius: 50%;
-   box-shadow: inset 5em 5em #344E41;
+   box-shadow: inset 5em 5em #344e41;
 }
 
-input[type='checkbox']:checked::before{
+input[type="checkbox"]:checked::before {
    transform: scale(1);
 }
 
@@ -111,7 +110,7 @@ input[type='checkbox']:checked::before{
    line-height: 30px;
    margin-top: 30px;
    border-radius: 10px;
-   box-shadow: 0 15px 30px #344E41;
+   box-shadow: 0 15px 30px #344e41;
    /* height: 400px; */
 }
 
@@ -126,12 +125,11 @@ input[type='checkbox']:checked::before{
 }
 
 @media screen and (min-width: 796px) {
-
-   body{
-      margin-top: 50px;
+   body {
+      margin-top: 30px;
       justify-content: flex-start;
    }
-   
+
    .container {
       display: flex;
       flex-direction: column;
@@ -139,8 +137,10 @@ input[type='checkbox']:checked::before{
       align-items: center;
    }
 
-   .head, .middle, .foot, .error{
+   .head,
+   .middle,
+   .foot,
+   .error {
       width: 50%;
    }
-
 }
