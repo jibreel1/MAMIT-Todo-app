@@ -39,19 +39,12 @@ const iconDelete = () => {
    });
 };
 
-const crossTask = () => {
-   var crossTodo = list.querySelectorAll("p");
-   crossTodo.forEach((text) => {
-      text.addEventListener("click", function () {
-         this.classList.toggle("completed");
+list.addEventListener("click", function (event) {
+   var element = event.target;
 
-         // if (text.classList.contains = "completed") {
-         //    console.log('Complete');
-         //    input.style.transform = "scale(1)";
-         // }
-      });
-   });
-};
+   if (element.type !== "checkbox") return;
+   element.nextSibling.classList.toggle("completed");
+});
 
 const addTaskHandler = () => {
    if (inputTodo.value.length == 0) {
@@ -62,7 +55,6 @@ const addTaskHandler = () => {
       inputTodo.style.border = "none";
       appendTask();
       iconDelete();
-      crossTask();
 
       inputTodo.value = "";
    }
