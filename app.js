@@ -12,8 +12,9 @@ const appendTask = () => {
    input.setAttribute("name", "todo");
    li.appendChild(input);
 
-   const text = document.getElementById("todo").value;
+   const text = inputTodo.value;
    const para = document.createElement("p");
+   para.classList.add('text-todo')
    const textNode = document.createTextNode(text);
    para.append(textNode);
    li.appendChild(para);

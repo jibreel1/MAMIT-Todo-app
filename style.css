@@ -73,10 +73,6 @@ body {
    font-size: 20px;
 }
 
-.inp1 p {
-   cursor: pointer;
-}
-
 input[type="checkbox"] {
    -webkit-appearance: none;
    appearance: none;
@@ -87,6 +83,7 @@ input[type="checkbox"] {
    display: grid;
    place-content: center;
    cursor: pointer;
+   margin-right: 10px;
 }
 
 input[type="checkbox"]::before {
@@ -104,7 +101,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .foot {
-   /* width: 100%; */
+   width: 100%;
    background-color: white;
    padding: 25px;
    line-height: 30px;
@@ -122,6 +119,14 @@ input[type="checkbox"]:checked::before {
 
 .completed {
    text-decoration: line-through;
+}
+
+.text-todo{
+   width: 70%;
+   word-wrap: break-word;
+   line-height: 20px;
+   /* display: flex;
+   justify-content: flex-start; */
 }
 
 @media screen and (min-width: 796px) {
