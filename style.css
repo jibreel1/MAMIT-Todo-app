@@ -101,7 +101,7 @@ input[type="checkbox"]:checked::before {
 }
 
 .foot {
-   width: 100%;
+   /* width: 100%; */
    background-color: white;
    padding: 25px;
    line-height: 30px;
